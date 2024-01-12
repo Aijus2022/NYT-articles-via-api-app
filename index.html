@@ -9,21 +9,27 @@
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">    
+
+
 <style>
-    /* custom styles*/
- body {
+    /*custom styles here */
+    body {
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* 100% of the viewport height */
     }
-  footer {
-            background-color: #343a40; /* Dark background color for header and footer */
-            color: #fff; /* White text color for header and footer */
-            padding: 10px;
-            text-align: center;
-            margin-bottom: 0; /* Ensures no margin below the footer */
-        }
+
+     footer {
+        background-color: #343a40; /* Dark background color for header and footer */
+        color: #fff; /* White text color for header and footer */
+        padding: 10px;
+        text-align: center;
+    }
+
     #articleResults {
+        flex: 1; /* This ensures that the content area grows to fill the available space */
         margin-top: 20px;
-         
     }
 
     .article {
@@ -33,7 +39,7 @@
     }
 
     .article h3 {
-        color: #39FF14; /* Neon green color */
+        color: #39FF14; /* Neon green color for heading */
     }
 
     .article p {
@@ -44,7 +50,12 @@
         color: #007bff;
         text-decoration: none;
     }
+
+    footer {
+        margin-bottom: 0; /* Ensures no margin below the footer */
+    }
 </style>
+
 </head>
 
        
